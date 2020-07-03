@@ -1,2 +1,3 @@
-# caliper-benchmark
-caliper benchmark example for hyperledger fabric 2.1.0
+# Caliper Benchmark Demo
+
+Caliper benchmark example for hyperledger fabric 2.1.0

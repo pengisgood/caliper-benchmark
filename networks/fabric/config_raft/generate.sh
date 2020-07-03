@@ -2,11 +2,10 @@
 
 : "${FABRIC_VERSION:=2.1.0}"
 : "${FABRIC_CA_VERSION:=1.4.7}"
-: "${THIRD_PARTY_VERSION:=0.4.20}"
 
 # if the binaries are not available, download them
 if [[ ! -d "bin" ]]; then
-  curl -sSL https://bit.ly/2ysbOFE | bash -s -- ${FABRIC_VERSION} ${FABRIC_CA_VERSION} ${THIRD_PARTY_VERSION} -ds
+  curl -sSL http://bit.ly/2ysbOFE | bash -s -- ${FABRIC_VERSION} ${FABRIC_CA_VERSION} 0.4.14 -ds
 fi
 
 rm -rf ./crypto-config/
